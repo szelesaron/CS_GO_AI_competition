@@ -5,7 +5,8 @@ from sklearn.preprocessing import StandardScaler
 from tensorflow.keras.models import load_model
 import pickle
 
-X, output_file = pd.read_json("dataset_00.json"), "asd.json"
+input_file, output_file = sys.argv[1], sys.argv[2]
+X = pd.read_json(input_file)
 
 
 model = load_model("model_final.h5")

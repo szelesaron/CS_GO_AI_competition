@@ -1,2 +1,14 @@
-pandas==1.0.3
-numpy==1.18.1
+Creating venv in anaconda:
+
+conda create -n env python=3.7
+conda install -c anaconda numpy
+conda install -c anaconda pandas
+conda install -c anaconda scikit-learn
+conda install -c conda-forge tensorflow
+
+python=3.7
+numpy=1.19.1
+pandas=1.0.3
+scikit-learn=0.23.1
+tensorflow=1.14.0
+
