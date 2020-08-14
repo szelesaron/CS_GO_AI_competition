@@ -51,7 +51,7 @@ default = ["UspS", "Glock", "P2000"]
 all_weapons = rifles + SMGs + heavy + pistols + default 
 
 
-#Using only the last istance of the position
+#Using only the last instance of the position
 def get_last_position(team):
     last_positions_team = []
     for row in X["alive_players"]:
@@ -88,7 +88,7 @@ def get_firepower(inventory_list):
     return firepower
 
 
-#Splitting all maps into a 3x3 grid, and suming the number of players in each sector 
+#Splitting all maps into a 3x3 grid, and summing the number of players in each sector 
 def get_sector(map_name, x, y):
     diff = map_len.get(map_name) / 3
     lower_limit_x = map_coords.get(map_name)[0]
@@ -179,7 +179,7 @@ def lead_round_diff():
     return team, diff
 
 
-#Checking fot weapons
+#Checking for weapons
 def detect_weapon(inventory_list, weapon):
     weapon_count = 0
     weapon_in_round = []
